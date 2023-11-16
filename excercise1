@@ -1,0 +1,16 @@
+const emailRegex = /^(?!.*\.{2,})(?!^\.)[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+const email = "abxc123@email.com";
+if (emailRegex.test(email)) {
+  console.log("Địa chỉ email hợp lệ!");
+} else {
+  console.log("Địa chỉ email không hợp lệ!");
+}
+
+
+const testString = "United States".match(/[aeiouAEIOU]/g);
+console.log("Số lượng nguyên âm trong chuỗi là:", testString);
+
+
+
+const number="1000000".replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+console.log(number);
