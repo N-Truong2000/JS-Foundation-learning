@@ -5,7 +5,6 @@ function tinhDienTich(loaiHinh, ...thamSo) {
                 if (thamSo.length !== 2) {
                     throw 'Hình chữ nhật cần hai tham số: chiều dài và chiều rộng.';
                 }
-               
                 const chieuDai = thamSo[0];
                 const chieuRong = thamSo[1];
                 const dienTichHCN = chieuDai * chieuRong;
@@ -33,11 +32,8 @@ function tinhDienTich(loaiHinh, ...thamSo) {
     }
 }
 
-function giaiPTBac2(a, b, c) {
-    // Tính delta
+function PTBac2(a, b, c) {
     var delta = b * b - 4 * a * c;
-
-    // Kiểm tra điều kiện
     if (delta > 0) {
         var x1 = (-b + Math.sqrt(delta)) / (2 * a);
         var x2 = (-b - Math.sqrt(delta)) / (2 * a);
@@ -50,11 +46,9 @@ function giaiPTBac2(a, b, c) {
     }
 }
 
-// Gọi hàm và in kết quả
-var a = 1; // Thay đổi các giá trị của a, b, c tại đây
-var b = -3;
-var c = 2;
 
-var ketQua = giaiPTBac2(a, b, c);
+
+
+var ketQua = PTBac2(31, 4, 5);
 console.log(ketQua);
 
