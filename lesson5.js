@@ -46,17 +46,18 @@ let arr=[1,4,2,43]
     //      return null;
     // }
     // console.log(sumOfArray(arr));
-
-    // function findNumber(n){
-    //     let result =[];
-    //         do{                if(n%2===0){
-    //                 result.push(n);
-    //             }
-    //             n--;
-    //         }while(n>0)
-    //         return result ;
-    // }
-
+   
+    function findNumber(...n){
+        let result =[];
+            do{                
+               if(n%2===0){
+                    result.push(n);
+                }
+                n--;
+            }while(n.length<0)
+            return result;
+    }
+    console.log(findNumber(1,2,3,4,5,6,7,5,44));
     // console.log(findNumber(51));
     // function sum(n) {
     //     let sum = 0;
@@ -111,17 +112,17 @@ let arr=[1,4,2,43]
 
 
 
-    let abc=[123,32,124,54,64,43232,3243,5];
+   //  let abc=[123,32,124,54,64,43232,3243,5];
 
-    for(let k in abc){
-       console.log(abc[k]);
-    }
+   //  for(let k in abc){
+   //     console.log(abc[k]);
+   //  }
 
 
     
-    for(let k of abc){
-        console.log(k);
-     }
+   //  for(let k of abc){
+   //      console.log(k);
+   //   }
     
  
     
