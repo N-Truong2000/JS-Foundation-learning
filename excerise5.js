@@ -7,15 +7,25 @@ function chiaBaiTienLen(soNguoiChoi) {
   const loaiBai = ["chuồng", "bích", "rô", "cơ"];
   for (let i = 0; i < 4; i++) {
     for (let j = 1; j <= 13; j++) {
+      let giaTri = j;
+      if (j === 11) {
+        giaTri = "J";
+      } else if (j === 12) {
+        giaTri = "Q";
+      } else if (j === 13) {
+        giaTri = "K";
+      }else if (j === 1) {
+        giaTri = "A";
+      };
       boBai.push({
         loai: loaiBai[i],
-        giaTri: j
+        giaTri: giaTri
       });
     }
   }
 
   function traoBai() {
-    for (let i = boBai.length - 1; i > 0; i--) {
+    for (let i = boBai.length-1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [boBai[i], boBai[j]] = [boBai[j], boBai[i]];
     }
@@ -43,5 +53,5 @@ function chiaBaiTienLen(soNguoiChoi) {
 
 
 
-const soNguoiChoi = 3; 
+const soNguoiChoi = 4; 
 const baiDaChia = chiaBaiTienLen(soNguoiChoi);
