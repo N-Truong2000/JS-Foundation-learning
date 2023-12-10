@@ -26,6 +26,6 @@ function stop() {
   console.log("stop success");
 }
 
-//countdown(5, stop);
-//countup(4,stop)
+countdown(5, stop);
+countup(4,stop)
 

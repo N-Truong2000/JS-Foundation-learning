@@ -53,5 +53,5 @@ function chiaBaiTienLen(soNguoiChoi) {
 
 
 
-const soNguoiChoi = 4; 
+const soNguoiChoi = 3; 
 const baiDaChia = chiaBaiTienLen(soNguoiChoi);
